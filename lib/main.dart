@@ -1,3 +1,5 @@
+import 'package:belajar_flutter/day_5/scaffold.dart';
+import 'package:belajar_flutter/tugas_1_flutter/tugas_1_flutter.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Tugas1(),
     );
   }
 }
