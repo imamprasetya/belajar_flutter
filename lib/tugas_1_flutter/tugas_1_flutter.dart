@@ -38,7 +38,8 @@ class Tugas1 extends StatelessWidget {
           ),
           Text("Saya adalah peserta App Developer di PPKD Jakarta Pusat",
           style: TextStyle(color: const Color.fromARGB(255, 0, 150, 12)),
-          )
+          ),
+          Image.asset("assets/images/tes.jpg"),
         ],
       ),
       backgroundColor: Color.fromARGB(255, 252, 221, 135),
