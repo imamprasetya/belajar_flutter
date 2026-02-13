@@ -51,7 +51,7 @@ class tugas2flutter extends StatelessWidget {
                 SizedBox(height: 10),
                 Row(
                   children: [
-                    Icon(Icons.email, color: const Color.fromARGB(255, 15, 0, 100)),
+                    Icon(Icons.person, color: const Color.fromARGB(255, 15, 0, 100)),
                     SizedBox(width: 16,),
                     Text("12345678",
                     style: TextStyle(
@@ -66,6 +66,8 @@ class tugas2flutter extends StatelessWidget {
                 //Soal No 4
                 Row(
                   children: [
+                    Icon(Icons.location_pin, color: const Color.fromARGB(255, 12, 0, 116)),
+                    SizedBox(width: 16,),
                     Text("Lokasi:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -83,6 +85,8 @@ class tugas2flutter extends StatelessWidget {
                 ),
                 Row(
                   children: [
+                    Icon(Icons.phone, color: const Color.fromARGB(255, 2, 0, 95)),
+                    SizedBox(width: 16,),
                     Text("No. Telp:",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -105,7 +109,7 @@ class tugas2flutter extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 50,
+                        padding: EdgeInsets.symmetric(vertical: 20),
                         decoration: BoxDecoration(color: const Color.fromARGB(255, 255, 251, 0),
                         borderRadius: BorderRadius.circular(12)
                         ),
@@ -118,7 +122,7 @@ class tugas2flutter extends StatelessWidget {
                         SizedBox(width: 15,),
                     Expanded(
                       child: Container(
-                        height: 50,
+                        padding: EdgeInsets.symmetric(vertical: 20),
                         decoration: BoxDecoration(color: const Color.fromARGB(255, 0, 53, 97),
                         borderRadius: BorderRadius.circular(12)
                         ),
@@ -133,17 +137,18 @@ class tugas2flutter extends StatelessWidget {
 
                 //Soal No 6
                 SizedBox(height: 15,),
-                Row(
+                Row( mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      height: 150,
-                      width: 250,
-                      decoration: BoxDecoration(color: Color(0xff0B2D72)),
+                      width: 270,
+                      decoration: BoxDecoration(color: Color(0xff0B2D72), borderRadius: BorderRadius.circular(12)),
                       child: Padding(
                         padding: EdgeInsets.all(16),
                         child: Container(
+                        padding: EdgeInsets.symmetric(vertical: 10),
                         decoration: BoxDecoration(color: Color(0xff0B2D72)),
                         child: Text("EDUCU Adalah aplikasi yang akan memudahkan pelajar untuk mengatur waktu belajarnya.",
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
                         ),
@@ -158,12 +163,12 @@ class tugas2flutter extends StatelessWidget {
           ),
           
           //Soal No 7
-          Row(
+          Row( mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 height: 200,
                 width: 200,
-                decoration: BoxDecoration(color: Color(0xffFfffff)),
+                decoration: BoxDecoration(color: Color.fromARGB(255, 229, 255, 206), borderRadius: BorderRadius.circular(12)),
                 child: Image.asset("assets/images/logo.png")),
             ],
           ),
