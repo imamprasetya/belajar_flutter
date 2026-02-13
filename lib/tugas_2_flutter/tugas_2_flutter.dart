@@ -75,7 +75,7 @@ class tugas2flutter extends StatelessWidget {
                     ),
                     ),
                     Spacer(),
-                    Text("Jakarta",
+                    Text("Jakarta, Indonesia",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: const Color.fromARGB(255, 0, 22, 117),
@@ -94,7 +94,7 @@ class tugas2flutter extends StatelessWidget {
                     ),
                     ),
                     Spacer(),
-                    Text("0987654321",
+                    Text("0987-6543-2112",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: const Color.fromARGB(255, 0, 22, 117),
@@ -110,12 +110,12 @@ class tugas2flutter extends StatelessWidget {
                     Expanded(
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 20),
-                        decoration: BoxDecoration(color: const Color.fromARGB(255, 255, 251, 0),
+                        decoration: BoxDecoration(color: const Color.fromARGB(255, 3, 17, 212),
                         borderRadius: BorderRadius.circular(12)
                         ),
                         child: Text("Facebook", textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: const Color.fromARGB(255, 0, 42, 133),
+                          color: const Color.fromARGB(255, 255, 255, 255),
                           fontWeight: FontWeight.bold,
                         ),
                         ))),
@@ -123,7 +123,7 @@ class tugas2flutter extends StatelessWidget {
                     Expanded(
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 20),
-                        decoration: BoxDecoration(color: const Color.fromARGB(255, 0, 53, 97),
+                        decoration: BoxDecoration(color: const Color.fromARGB(255, 240, 0, 112),
                         borderRadius: BorderRadius.circular(12)
                         ),
                         child: Text("Instragram", textAlign: TextAlign.center,
