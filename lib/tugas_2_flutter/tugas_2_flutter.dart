@@ -106,8 +106,10 @@ class tugas2flutter extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 50,
-                        decoration: BoxDecoration(color: const Color.fromARGB(255, 255, 251, 0)),
-                        child: Text("Facebook",
+                        decoration: BoxDecoration(color: const Color.fromARGB(255, 255, 251, 0),
+                        borderRadius: BorderRadius.circular(12)
+                        ),
+                        child: Text("Facebook", textAlign: TextAlign.center,
                         style: TextStyle(
                           color: const Color.fromARGB(255, 0, 42, 133),
                           fontWeight: FontWeight.bold,
@@ -117,8 +119,10 @@ class tugas2flutter extends StatelessWidget {
                     Expanded(
                       child: Container(
                         height: 50,
-                        decoration: BoxDecoration(color: const Color.fromARGB(255, 0, 53, 97),),
-                        child: Text("Instragram",
+                        decoration: BoxDecoration(color: const Color.fromARGB(255, 0, 53, 97),
+                        borderRadius: BorderRadius.circular(12)
+                        ),
+                        child: Text("Instragram", textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -159,6 +163,7 @@ class tugas2flutter extends StatelessWidget {
               Container(
                 height: 200,
                 width: 200,
+                decoration: BoxDecoration(color: Color(0xffFfffff)),
                 child: Image.asset("assets/images/logo.png")),
             ],
           ),
