@@ -83,6 +83,7 @@ class tugas2flutter extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 15,),
                 Row(
                   children: [
                     Icon(Icons.phone, color: const Color.fromARGB(255, 2, 0, 95)),
