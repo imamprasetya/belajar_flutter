@@ -32,6 +32,7 @@ class _Tugas5FlutterState extends State<Tugas5Flutter> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            
             //ElevatedButton
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -98,6 +99,7 @@ class _Tugas5FlutterState extends State<Tugas5Flutter> {
                   padding: const EdgeInsets.all(8.0),
                   child: Text("Belajarlah dengan sungguh-sungguh karena seseorang akan mulia jika bersama ilmu yang luhur.", textAlign: TextAlign.center,),
                 ),
+                SizedBox(height: 20,),
         
               //InkWell
               InkWell(
@@ -108,18 +110,14 @@ class _Tugas5FlutterState extends State<Tugas5Flutter> {
                   print("Kotak berhasil disentuh!");
                 },
                 child: Container(
-                  width: 50,
-                  height: 25,
-                  color: Colors.blue,
+                  width: 200,
+                  height: 200,
                   alignment: Alignment.center,
-                  child: Text(
-                    "KLIK!",
-                    style: TextStyle(color: Colors.white),
-                  ),
+                  child: Image.network("https://c.tenor.com/ogVQTasAMTMAAAAC/anime-houtarou.gif")
                 ),
               ),
               if (kotak)
-                Text("Jangan klik terus"),
+                Text("Jangan klik terus, Stopppp!!!!!!!"),
               SizedBox(height: 20,),
         
               //GestureDetector
@@ -142,7 +140,10 @@ class _Tugas5FlutterState extends State<Tugas5Flutter> {
                 child: Container(
                   width: 200,
                   height: 100,
-                  color: const Color.fromARGB(255, 182, 136, 0),
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 255, 215, 95),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   alignment: Alignment.center,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
