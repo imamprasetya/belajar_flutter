@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/tugas_6_flutter/forgot.dart';
 import 'package:flutter/material.dart';
 
 class Tugas6Flutter extends StatefulWidget {
@@ -26,19 +27,21 @@ class _Tugas6FlutterState extends State<Tugas6Flutter> {
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset("assets/images/logo.png",
-              height: 150,
-              width: 150,
+              height: 120,
+              width: 120,
               ),
               Text("EDUCU",
               style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 32),
+                color: Color.fromARGB(255, 12, 12, 110),
                 fontSize: 40,
                 fontWeight: FontWeight.bold,
               ),
               ),
+              SizedBox(height: 10,),
 
               Text("Hello Welcome Back",
               style: TextStyle(
@@ -47,14 +50,14 @@ class _Tugas6FlutterState extends State<Tugas6Flutter> {
                 fontWeight: FontWeight.bold,
               ),
               ),
-              SizedBox(height: 10,),
-              Text("Welcome back please sign in again",
+              SizedBox(height: 7,),
+              Text("Sign in to your account. Have a good time",
               style: TextStyle(
                 color: Colors.blueGrey,
               ),
               ),
           
-              SizedBox(height: 25,),
+              SizedBox(height: 35,),
 
               Row(
                 children: [
@@ -88,25 +91,42 @@ class _Tugas6FlutterState extends State<Tugas6Flutter> {
                 ),
               ),
 
-              SizedBox(height: 15,),
+              SizedBox(height: 20,),
 
+              //Lupa Password
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text("Forgot Password?",
+                  GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => JanganLupa()
+                        ),
+                      );
+                  },
+                  child: Text("Forgot Password?",
                   style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 119),
                     fontWeight: FontWeight.bold,
                   ),
                   ),
+                  )
+                  
                 ],
               ),
 
-              SizedBox(height: 15,),
-
+              SizedBox(height: 20,),
+              
+              //Login
               Row(
                 children: [
                   Expanded(
+                    child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/login');
+                    },
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
@@ -125,9 +145,11 @@ class _Tugas6FlutterState extends State<Tugas6Flutter> {
                         ),
                       ],
                     ),
+                    ),
                   ),
                 ],
               ),
+              SizedBox(height: 20,),
 
               //Sign In With
               Row(
@@ -154,8 +176,100 @@ class _Tugas6FlutterState extends State<Tugas6Flutter> {
                   ),
                 ],
               ),
+              SizedBox(height: 20,),
+
+              //Sosmed
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 229, 243, 255),
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        ),
+                        Row(
+                          children: [
+                            Image.asset("assets/images/google.png",
+                            height: 30,
+                            width: 30,
+                            ),
+                            SizedBox(width: 10,),
+                            Text("Google",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 51),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 17,
+                            ),
+                            ),
+                          ],
+                        )
+                    ],
+                  ),
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 229, 243, 255),
+                          borderRadius: BorderRadius.circular(15)
+                        ),
+                        ),
+                        Row(
+                          children: [
+                            Image.asset("assets/images/facebook.png",
+                            height: 30,
+                            width: 30,
+                            ),
+                            SizedBox(width: 10,),
+                            Text("Facebook",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 51),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 17,
+                            ),
+                            ),
+                          ],
+                        )
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(height: 35,),
+
+              //Punya akun?
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Don't have an account?",
+                  style: TextStyle(
+                    color: Colors.blueGrey,
+                  ),
+                  ),
+                  SizedBox(width: 5,),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushReplacementNamed(context, '/signup');
+                    },
+                    child:
+                      Text("Sign Up",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 51),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
-                ),
+          ),
         ),
       backgroundColor: Color.fromARGB(255, 214, 237, 255),
     );

@@ -5,6 +5,8 @@ import 'package:belajar_flutter/tugas_3_flutter/tugas_3_flutter.dart';
 import 'package:belajar_flutter/tugas_4_flutter/tugas_4_flutter.dart';
 import 'package:belajar_flutter/tugas_5_flutter/tugas_5_flutter.dart';
 import 'package:belajar_flutter/tugas_6_flutter/tugas_6_flutter.dart';
+import 'package:belajar_flutter/tugas_6_flutter/signup.dart';
+import 'package:belajar_flutter/tugas_6_flutter/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -37,7 +39,13 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Tugas6Flutter(),
+       initialRoute: '/',
+      routes: {
+      '/': (context) => Tugas6Flutter(),
+      '/login': (context) => MasukLogin(),
+      '/signup': (context) => BikinBaru(),
+      },
+      // home: Tugas6Flutter(),
     );
   }
 }
