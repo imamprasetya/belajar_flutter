@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/tugas_6_flutter/forgot.dart';
+import 'package:belajar_flutter/tugas_6_flutter_login/forgot.dart';
 import 'package:flutter/material.dart';
 
 class Tugas6Flutter extends StatefulWidget {
