@@ -14,7 +14,7 @@ class _CheckboxPageState extends State<CheckboxPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Checkbox",
+        title: const Text("Syarat & Ketentuan",
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,

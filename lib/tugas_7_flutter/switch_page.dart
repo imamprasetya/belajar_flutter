@@ -15,7 +15,7 @@ class _SwitchPageState extends State<SwitchPage> {
     return Scaffold(
       backgroundColor: isOn ? Colors.blueGrey : Colors.white,
       appBar: AppBar(
-        title: const Text("Mode",
+        title: const Text("Mode Gelap",
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
