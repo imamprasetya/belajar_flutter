@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'alur_model.dart';
 import 'data_model.dart';
 
 class ModelPage extends StatefulWidget {
@@ -10,22 +10,12 @@ class ModelPage extends StatefulWidget {
 }
 
 class _ModelPageState extends State<ModelPage> {
-  List<Pengajar> daftarPengajar = []; //nampung data
+  List<Pengajar> daftar = [];
 
   @override
   void initState() {
     super.initState();
-    loadData();
-  }
-
-  Future<void> loadData() async {
-    final String response =
-        await rootBundle.loadString('assets/data_model.json');
-    final List<Pengajar> data = Pengajar.fromJsonList(response);
-
-    setState(() {
-      daftarPengajar = data;
-    });
+    daftar = daftarPengajar; // ambil dari data_model.dart
   }
 
   @override
@@ -43,35 +33,31 @@ class _ModelPageState extends State<ModelPage> {
           ),
         ),
       ),
-      body: daftarPengajar.isEmpty
-          ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              itemCount: daftarPengajar.length,
-              itemBuilder: (context, index) {
-                final pengajar = daftarPengajar[index];
-                return Card(
-                  margin: const EdgeInsets.all(10),
-                  child: ListTile(
-                    leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Image.network(
-                        pengajar.gambar,
-                        width: 50,
-                        height: 50,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    title: Text(
-                      pengajar.nama,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    subtitle: Text(pengajar.mapel),
-                  ),
-                );
-              },
+      body: ListView.builder(
+        itemCount: daftar.length,
+        itemBuilder: (context, index) {
+          final pengajar = daftar[index];
+          return Card(
+            margin: const EdgeInsets.all(10),
+            child: ListTile(
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: Image.network(
+                  pengajar.gambar,
+                  width: 50,
+                  height: 50,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              title: Text(
+                pengajar.nama,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              subtitle: Text(pengajar.mapel),
             ),
+          );
+        },
+      ),
     );
   }
 }
