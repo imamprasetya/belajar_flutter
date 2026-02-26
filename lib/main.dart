@@ -10,6 +10,7 @@ import 'package:belajar_flutter/tugas_6_flutter_login/login.dart';
 import 'package:belajar_flutter/tugas_7_flutter/tugas_7_flutter.dart';
 import 'package:belajar_flutter/tugas_8_flutter_navigator/home.dart';
 import 'package:belajar_flutter/tugas_9_flutter_model/tugas_9_flutter.dart';
+import 'package:belajar_flutter/tugas_10_flutter_register/tugas_10_flutter.dart';
 
 
 import 'package:flutter/material.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
       // '/login': (context) => MasukLogin(),
       // '/signup': (context) => BikinBaru(),
       // },
-      home: Tugas9Flutter(),
+      home: Tugas10Flutter(),
     );
   }
 }
