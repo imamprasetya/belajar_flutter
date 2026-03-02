@@ -1,5 +1,7 @@
+import 'package:belajar_flutter/day_16/view/cr_siswa.dart';
 import 'package:belajar_flutter/day_16/view/splash_screen.dart';
 import 'package:belajar_flutter/day_5/scaffold.dart';
+import 'package:belajar_flutter/tugas_11_flutter_cr/view/tugas_11_flutter.dart';
 import 'package:belajar_flutter/tugas_1_flutter/tugas_1_flutter.dart';
 import 'package:belajar_flutter/tugas_2_flutter/tugas_2_flutter.dart';
 import 'package:belajar_flutter/tugas_3_flutter/tugas_3_flutter.dart';
@@ -14,7 +16,6 @@ import 'package:belajar_flutter/tugas_9_flutter_model/tugas_9_flutter.dart';
 import 'package:belajar_flutter/tugas_10_flutter_register/tugas_10_flutter.dart';
 import 'package:belajar_flutter/day_16/view/login_screen.dart';
 
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -53,7 +55,7 @@ class MyApp extends StatelessWidget {
       // '/login': (context) => MasukLogin(),
       // '/signup': (context) => BikinBaru(),
       // },
-      home: SplashScreenDay16(),
+      home: Tugas11Flutter(),
     );
   }
 }

@@ -8,9 +8,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 214, 237, 255),
       body: Column(
-        children: [
-          Center(child: Text("Haloo"))
-        ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [Center(child: Text("Haloo"))],
       ),
     );
   }
