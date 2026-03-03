@@ -1,7 +1,7 @@
-import 'package:belajar_flutter/day_16/view/cr_siswa.dart';
-import 'package:belajar_flutter/day_16/view/splash_screen.dart';
+import 'package:belajar_flutter/day_16_17_18/view/cr_siswa.dart';
+import 'package:belajar_flutter/day_16_17_18/view/splash_screen.dart';
 import 'package:belajar_flutter/day_5/scaffold.dart';
-import 'package:belajar_flutter/tugas_11_flutter_cr/view/tugas_11_flutter.dart';
+import 'package:belajar_flutter/tugas_11_12_flutter_crud/view/cr_sinau.dart';
 import 'package:belajar_flutter/tugas_1_flutter/tugas_1_flutter.dart';
 import 'package:belajar_flutter/tugas_2_flutter/tugas_2_flutter.dart';
 import 'package:belajar_flutter/tugas_3_flutter/tugas_3_flutter.dart';
@@ -14,7 +14,7 @@ import 'package:belajar_flutter/tugas_7_flutter/tugas_7_flutter.dart';
 import 'package:belajar_flutter/tugas_8_flutter_navigator/home.dart';
 import 'package:belajar_flutter/tugas_9_flutter_model/tugas_9_flutter.dart';
 import 'package:belajar_flutter/tugas_10_flutter_register/tugas_10_flutter.dart';
-import 'package:belajar_flutter/day_16/view/login_screen.dart';
+import 'package:belajar_flutter/day_16_17_18/view/login_screen.dart';
 
 import 'package:flutter/material.dart';
 

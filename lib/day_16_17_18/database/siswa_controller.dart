@@ -1,5 +1,5 @@
-import 'package:belajar_flutter/day_16/database/sqflite.dart';
-import 'package:belajar_flutter/day_16/models/siswa_model.dart';
+import 'package:belajar_flutter/day_16_17_18/database/sqflite.dart';
+import 'package:belajar_flutter/day_16_17_18/models/siswa_model.dart';
 
 class SiswaController {
   static Future<void> registerSiswa(SiswaModel siswa) async {

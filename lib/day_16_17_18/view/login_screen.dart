@@ -1,11 +1,11 @@
-import 'package:belajar_flutter/day_16/database/preference.dart';
-import 'package:belajar_flutter/day_16/database/sqflite.dart';
-import 'package:belajar_flutter/day_16/models/user_model.dart';
-import 'package:belajar_flutter/day_16/view/home.dart';
+import 'package:belajar_flutter/day_16_17_18/database/preference.dart';
+import 'package:belajar_flutter/day_16_17_18/database/sqflite.dart';
+import 'package:belajar_flutter/day_16_17_18/models/user_model.dart';
+import 'package:belajar_flutter/day_16_17_18/view/home.dart';
 import 'package:belajar_flutter/extension/navigator.dart';
 import 'package:belajar_flutter/tugas_6_flutter_login/forgot.dart';
 import 'package:flutter/material.dart';
-import 'package:belajar_flutter/day_16/view/home.dart';
+import 'package:belajar_flutter/day_16_17_18/view/home.dart';
 
 class LoginScreenDay16 extends StatefulWidget {
   const LoginScreenDay16({super.key});

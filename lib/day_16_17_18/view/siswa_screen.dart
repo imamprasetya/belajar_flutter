@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:belajar_flutter/day_16/models/siswa_model.dart';
-import 'package:belajar_flutter/day_16/database/siswa_controller.dart';
+import 'package:belajar_flutter/day_16_17_18/models/siswa_model.dart';
+import 'package:belajar_flutter/day_16_17_18/database/siswa_controller.dart';
 
 class SiswaScreen extends StatefulWidget {
   const SiswaScreen({super.key});

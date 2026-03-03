@@ -1,4 +1,4 @@
-import 'package:belajar_flutter/day_16/models/user_model.dart';
+import 'package:belajar_flutter/day_16_17_18/models/user_model.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 

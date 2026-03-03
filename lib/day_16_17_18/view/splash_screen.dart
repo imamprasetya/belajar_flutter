@@ -1,9 +1,8 @@
-import 'package:belajar_flutter/day_16/database/preference.dart';
-import 'package:belajar_flutter/day_16/view/home.dart';
-import 'package:belajar_flutter/day_16/view/login_screen.dart';
+import 'package:belajar_flutter/day_16_17_18/database/preference.dart';
+import 'package:belajar_flutter/day_16_17_18/view/home.dart';
+import 'package:belajar_flutter/day_16_17_18/view/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter/extension/navigator.dart';
-
 
 class SplashScreenDay16 extends StatefulWidget {
   const SplashScreenDay16({super.key});
@@ -39,9 +38,10 @@ class _SplashScreenDay16State extends State<SplashScreenDay16> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Image.asset("assets/images/logo.png",
-            width: 200,
-            height: 200,
+            child: Image.asset(
+              "assets/images/logo.png",
+              width: 200,
+              height: 200,
             ),
           ),
         ],
