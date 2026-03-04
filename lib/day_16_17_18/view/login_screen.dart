@@ -193,6 +193,8 @@ class _LoginScreenDay16State extends State<LoginScreenDay16> {
               ),
             ),
             SizedBox(height: 20),
+
+            //pendaftaran
             SizedBox(
               height: 45,
               child: ElevatedButton(

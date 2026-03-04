@@ -10,13 +10,9 @@ class HomeTugas8 extends StatefulWidget {
 }
 
 class _HomeTugas8State extends State<HomeTugas8> {
-
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = const [
-    Tugas7Flutter(),   
-    TentangPage(),
-  ];
+  final List<Widget> _pages = const [Tugas7Flutter(), TentangPage()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -35,10 +31,7 @@ class _HomeTugas8State extends State<HomeTugas8> {
         selectedItemColor: const Color.fromARGB(255, 0, 25, 46),
 
         items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             label: "Tentang Aplikasi",

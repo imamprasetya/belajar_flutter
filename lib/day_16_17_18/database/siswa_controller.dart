@@ -16,7 +16,9 @@ class SiswaController {
   }
 }
 
-/*Flow Kerja
+/*FLow kerja
 1. Buat DBHelper (Database, Table)
 2. Membuat Model
+3. Membuat function CRUD
+4. Terapkan di UI
 */
