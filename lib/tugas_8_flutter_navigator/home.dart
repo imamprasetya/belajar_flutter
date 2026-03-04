@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../tugas_7_flutter/tugas_7_flutter.dart';
+import '../tugas_7_flutter_drawer/tugas_7_flutter.dart';
 import 'tentang.dart';
 
 class HomeTugas8 extends StatefulWidget {
