@@ -2,6 +2,7 @@ import 'package:belajar_flutter/day_16_17_18/view/cr_siswa.dart';
 import 'package:belajar_flutter/day_16_17_18/view/splash_screen.dart';
 import 'package:belajar_flutter/day_5/scaffold.dart';
 import 'package:belajar_flutter/tugas_11_12_flutter_crud/view/cr_sinau.dart';
+import 'package:belajar_flutter/tugas_14_api_store/view/home_store_screen.dart';
 import 'package:belajar_flutter/tugas_1_flutter/tugas_1_flutter.dart';
 import 'package:belajar_flutter/tugas_2_flutter/tugas_2_flutter.dart';
 import 'package:belajar_flutter/tugas_3_flutter/tugas_3_flutter.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
       // '/login': (context) => MasukLogin(),
       // '/signup': (context) => BikinBaru(),
       // },
-      home: Tugas11Flutter(),
+      home: HomeStoreScreen(),
     );
   }
 }
