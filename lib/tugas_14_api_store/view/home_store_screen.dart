@@ -83,7 +83,14 @@ class _HomeStoreScreenState extends State<HomeStoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Product Store"), centerTitle: true),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "TOKOMASAJI",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        centerTitle: true,
+      ),
       body: Column(
         children: [
           // SEARCH
